@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+html {
+  background-image: url(img/bluewp.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #ebebeb;
+  background-attachment: fixed;
+}
+body {
+  margin: 1em;
+  font-family: "Roboto", sans-serif
+
+}
+
+h1,
+h2,
+h3,
+a {
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+}
+
+#border {
+  border-radius: 2px;
+  border-color: white;
+  border-style:groove
+}
+
+#image {
+  display: block;
+  margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+  #image {
+    display: block;
+  }
+}
+
+article,
+aside,
+footer,
+nav {
+  border-radius: 15px;
+  padding: 1%;
+}
+
+nav a {
+  border-radius: 15px;
+}
+
+header img#logo {
+  width: 25%;
+  display: block;
+  margin: auto;
+
+}
+
+footer {
+  text-align: center;
+}
+
+
+.topnav {
+  background-color: #000000;
+  overflow: hidden;
+
+}
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #dcdcea;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  -moz-transition: all .51s;
+  -o-transition: all .51s;
+  -webkit-transition: all .51s;
+  transition: all .51s;
+}
+
+article:hover, aside:hover {
+  border-radius: 2px;
+  -moz-transition: all .51s;
+  -o-transition: all .51s;
+  -webkit-transition: all .51s;
+  transition: all .51s;
+}
+
+a.active {
+  background-color: #aaa;
+  color: black;
+}
+
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+footer:hover {
+  border-radius: 100px;
+  -moz-transition: all .51s;
+  -o-transition: all .51s;
+  -webkit-transition: all .51s;
+  transition: all .51s;
+}
+
+@media screen and (max-width: 700px) {
+  .topnav a:not(:first-child) {
+    display: none;
+  }
+
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+  .topnav.responsive {
+    position: relative;
+  }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 6px;
+    top: 6px;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+
+input[type=submit] {
+  background-color: #333;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media (max-width: 700px) {
+
+  .col-25,
+  .col-75,
+  input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 600px){
+  #image{
+    width: 50vw;
+  
+  }
+}
